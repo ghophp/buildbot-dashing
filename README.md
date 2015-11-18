@@ -1,4 +1,6 @@
 # buildbot-dashing
+
+[![Join the chat at https://gitter.im/ghophp/buildbot-dashboard](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ghophp/buildbot-dashboard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 If you have a buildbot setup at your company, it is really ugly to put it into a central display and follow the builds. This project aims to be the interface that will allow you to do that.
 
 ## Precompiled Binaries
