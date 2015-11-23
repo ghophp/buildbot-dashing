@@ -63,6 +63,44 @@ $ go run *.go -builbot="http://10.0.0.1/"
 
 ![Apache Board Small](/preview/preview_apache_small.gif?raw=true "Apache Board Small")
 
+## runit
+
+When using [runit](http://smarden.org/runit/) this schema can be used:
+
+    /services
+    `--buildbot-dashboard
+       |--app (The buildbot-dashboard binary)
+       |--env
+       |  `--PORT
+       |--run (run script)
+       `--log
+        |--main/
+        `--run (run script for log)
+
+Contents of env/PORT (the environment var):
+
+    8080
+
+
+Contents of run:
+```sh
+#!/bin/sh
+
+# get both standar output/error
+exec 2>&1
+
+# run like user buildbot
+exec chpst -u buildbot -e ./env ./app --buildbot="http://10.0.0.1:8010"
+```
+
+
+Contents of log/run:
+```sh
+#!/bin/sh
+exec svlogd -tt ./main
+```
+
 ## Todo
+- Use violetear
 - Allow a totally compressed size to boards with a lot of builders
 - Create a fully adapted mode, that by the size of the display, and the number of the projects, keep "walking" through the multiple screens
