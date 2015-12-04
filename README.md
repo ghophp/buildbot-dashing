@@ -1,5 +1,5 @@
 # buildbot-dashboard [![Join the chat at https://gitter.im/ghophp/buildbot-dashboard](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ghophp/buildbot-dashboard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-If you have a CI/CD setup, it is really important to keep a central display and follow the builds and process going on the CI tool. This project aims to be the dashboard that will allow you to do present better results at a central display with `buildbot`.
+If you have a CI/CD setup, it is really important to keep a central display and follow the builds and process going on the Continous Integration tool. This project aims to be the dashboard that will allow you to do present better results at a central display with `buildbot`.
 
 ## Download [![Build Status](https://semaphoreci.com/api/v1/projects/44130239-880c-468f-9fa7-b976a355676a/611030/badge.svg)](https://semaphoreci.com/ghophp/buildbot-dashboard)
 The project has some precompiled binaries, if your enviroment match one of the releases above, this is the most simple way to use this project.
